@@ -19,13 +19,16 @@
 ---
 
 ## 프로젝트 개요
+<p align="center">
+  
+</p>
 - **목표**: 512-point FFT를 SystemVerilog로 구현하고 CBFP를 적용하여 fixed 환경에서 비트 성장(bit growth)을 제어하고 SQNR 향상을 검증.  
 - **핵심요소**
   - Butterfly 연산(복소수 덧셈/뺄셈)
   - Twiddle factor 곱셈
   - Shift registers / 파이프라인 단계
   - CBFP 적용으로 블록 단위 공통지수 사용 → 양자화 손실 감소 및 효율적 연산
-- **주요 결과**: CBFP 적용으로 SQNR이 유의미하게 향상(슬라이드 기반 비교 결과 기준).
+- **주요 결과**: CBFP 적용으로 SQNR이 유의미하게 향상.
 
 ---
 
