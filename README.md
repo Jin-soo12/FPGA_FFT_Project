@@ -25,7 +25,7 @@
   - Twiddle factor 곱셈
   - Shift registers / 파이프라인 단계
   - CBFP 적용으로 블록 단위 공통지수 사용 → 양자화 손실 감소 및 효율적 연산
-- **주요 결과**: CBFP 적용으로 SQNR이 유의미하게 향상(슬라이드 기반 비교 결과 기준). :contentReference[oaicite:0]{index=0}
+- **주요 결과**: CBFP 적용으로 SQNR이 유의미하게 향상(슬라이드 기반 비교 결과 기준).
 
 ---
 
