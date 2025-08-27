@@ -102,7 +102,7 @@
 
 ### Synthesis Result
 <p align="center">
-<img width="1533" height="388" alt="image" src="https://github.com/user-attachments/assets/83a4abbd-4f5b-4a97-b6d3c-6209e377bc4a" />
+<img width="1531" height="387" alt="image" src="https://github.com/user-attachments/assets/fe262774-5336-4fa9-8833-42b591011dbb" />
   </p>
 
   <p align="center">
