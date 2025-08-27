@@ -1,12 +1,8 @@
-# 8조 FFT Fixed Project
-
-**팀**: 김진수, 권혁진, 양현준, 송유경  
-**과정**: 대한상공회의소 AI시스템반도체설계 2기  
-**발표일**: 2025-08-05
+# FFT Fixed Project
 
 ---
 
-## 한줄 요약
+## 요약
 512-point FFT를 SystemVerilog로 RTL 구현하고 CBFP(Convergent Block Floating Point)를 적용하여 fixed-point 환경에서 성능(quantization, SQNR)을 개선한 후 Vivado로 합성·시뮬레이션·FPGA 검증을 수행한 프로젝트입니다.
 
 ---
