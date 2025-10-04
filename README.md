@@ -2,12 +2,12 @@
 
 ---
 
-## 📝 요약
+## 요약
 512-point FFT를 SystemVerilog로 RTL 구현하고 CBFP(Convergent Block Floating Point)를 적용하여 fixed-point 환경에서 성능(quantization, SQNR)을 개선한 후 Vivado로 합성·시뮬레이션·FPGA 검증을 수행한 프로젝트입니다.
 
 ---
 
-## 📚 목차
+## 목차
 - [프로젝트 개요](#프로젝트-개요)  
 - [블록 다이어그램 / 모듈 구조](#블록-다이어그램--모듈-구조)  
 - [타이밍 요약](#타이밍-요약)  
@@ -18,7 +18,7 @@
 - [결론 및 고찰](#결론-및-고찰)  
 ---
 
-## 🎯 프로젝트 개요
+## 프로젝트 개요
  **목표**
 - 512-point FFT 및 CBFP 알고리즘에 관한 논문을 분석.
 - MATLAB 및 SystemVerilog로 구현하여 MATLAB에서의 결과와 SystemVerilog(하드웨어)로 구현한 모듈의 결과가 일치함을 확인.
@@ -39,7 +39,7 @@
 
 ---
 
-## 🧩 블록 다이어그램 / 모듈 구조
+## 블록 다이어그램 / 모듈 구조
 <p align="center">
   <img width="1757" height="482" alt="image" src="https://github.com/user-attachments/assets/0367728b-6859-474d-8d49-ce1eb3fc3e1f" />
 </p>
@@ -54,7 +54,7 @@
 
 ---
 
-## ⏱️ 타이밍 요약
+## 타이밍 요약
 <p align="center">
 <img width="1663" height="318" alt="image" src="https://github.com/user-attachments/assets/7c460a30-d7d0-4e03-9c39-47aa95ec6337" />
 </p>
@@ -64,7 +64,7 @@
 
 ---
 
-## 🧪 RTL 시뮬레이션 결과 요약
+## RTL 시뮬레이션 결과 요약
 <p align="center">
 <img width="1662" height="377" alt="image" src="https://github.com/user-attachments/assets/610faefb-745f-4121-afb6-a7f36e242c77" />
 </p>
@@ -82,7 +82,7 @@
 
 ---
 
-## 🏗️ 합성(Synthesis) & 구현(Implementation)
+## 합성(Synthesis) & 구현(Implementation)
 - 32CLK Data in / 8CLK Data Blocking의 동작을 하는 Cos Generator로 이번 프로젝트에서 설계한 FFT 모듈의 정상 동작 확인 
 
 ### FPGA Block Diagram
@@ -117,13 +117,13 @@
 
 ---
 
-## 🔬 FPGA 검증 요약
+## FPGA 검증 요약
 - `cos_gen` 유효성: 32CLK 동안 cos 값 유효(주기성 관찰).  
 - Vivado 기반 실제 구현에서 타이밍 조건을 만족시키며 정상 동작 확인.
 
 ---
 
-## 🐞 Trouble Shooting
+## Trouble Shooting
 ### 문제점
 <p align="center">
 <img width="1584" height="259" alt="image" src="https://github.com/user-attachments/assets/49fbf90e-dde3-4682-9ac7-6490005d29a0" />
@@ -131,7 +131,7 @@
 
 - Butterfly계산 후 Twiddle 계산에서 항상 1CLK의 쓰레기 값이 출력되는 현상 발생.
 
-### 🛠️ 해결책
+### 해결책
 <p align="center">
 <img width="1566" height="276" alt="image" src="https://github.com/user-attachments/assets/c251422c-4e64-46d2-a700-6bfab5e65574" />
 </p>
@@ -140,7 +140,7 @@
 
 ---
 
-## ✅ 결론 및 고찰
+## 결론 및 고찰
 - 512-point FFT RTL 구현 및 FPGA 검증 완료.  
 - CBFP 적용을 통해 fixed-point 환경에서의 SQNR 개선을 달성.  
 - 파이프라인 설계에서 `valid` 신호와 데이터 흐름의 동기화가 가장 중요함을 확인.  
