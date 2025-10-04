@@ -1,4 +1,4 @@
-# FFT Fixed Project
+# 512-Fixed Point FFT H/W Project
 
 ---
 
