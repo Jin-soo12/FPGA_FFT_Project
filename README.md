@@ -19,23 +19,25 @@
 ---
 
 ## 프로젝트 개요
- **목표**
+ ### 목표
 - 512-point FFT 및 CBFP 알고리즘에 관한 논문을 분석.
 - MATLAB 및 SystemVerilog로 구현하여 MATLAB에서의 결과와 SystemVerilog(하드웨어)로 구현한 모듈의 결과가 일치함을 확인.
 - Synthesis를 통한 Setup Time 부합 및 Total Area 확인.
 
- **핵심요소**
-<p align="center">
+ ### 핵심요소
+ 
 <img width="525" height="659" alt="image" src="https://github.com/user-attachments/assets/c30e3fef-d714-4749-b636-c0802e6f58d4" />
-</p>
 
+**Radix-2^2 DIF FFT**
   - Butterfly 연산(복소수 덧셈/뺄셈)
   - Twiddle factor 곱셈
   - Shift registers / 파이프라인 단계
-  - CBFP 적용으로 블록 단위 공통지수 사용 → 양자화 손실 감소 및 효율적 연산
 
-  **주요 결과**
-- CBFP 적용으로 SQNR이 유의미하게 향상.
+  <img width="1147" height="435" alt="image" src="https://github.com/user-attachments/assets/340f7375-e785-453e-838b-dc0eb5a41d33" />
+  
+**CBFP(Convergent Block Floating Point)**
+  - 양자화 노이즈 감소 → SNR(SQNR) 향상
+  - CBFP 미적용 구조에 비해 약 16dB 상승
 
 ---
 
