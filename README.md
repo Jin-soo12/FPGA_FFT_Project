@@ -26,16 +26,18 @@
 
  ### 핵심요소
  
+ **Radix-2^2 DIF FFT**
+ 
 <img width="525" height="659" alt="image" src="https://github.com/user-attachments/assets/c30e3fef-d714-4749-b636-c0802e6f58d4" />
 
-**Radix-2^2 DIF FFT**
   - Butterfly 연산(복소수 덧셈/뺄셈)
   - Twiddle factor 곱셈
   - Shift registers / 파이프라인 단계
 
-  <img width="1147" height="435" alt="image" src="https://github.com/user-attachments/assets/340f7375-e785-453e-838b-dc0eb5a41d33" />
-  
 **CBFP(Convergent Block Floating Point)**
+
+  <img width="1147" height="435" alt="image" src="https://github.com/user-attachments/assets/340f7375-e785-453e-838b-dc0eb5a41d33" />
+
   - 양자화 노이즈 감소 → SNR(SQNR) 향상
   - CBFP 미적용 구조에 비해 약 16dB 상승
 
